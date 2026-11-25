@@ -27,3 +27,12 @@ function oleada(){
     alert("Oleada completada");
 
 }
+function cristal(){
+
+    if(bolasDragon == 0){
+
+        alert("Solo puedes salir");
+
+    }
+
+}
