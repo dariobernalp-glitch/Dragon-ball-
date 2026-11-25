@@ -20,3 +20,10 @@ function entrenar(){
     alert("Fuerza: " + fuerza);
 
 }
+function oleada(){
+
+    gemas += 50;
+
+    alert("Oleada completada");
+
+}
