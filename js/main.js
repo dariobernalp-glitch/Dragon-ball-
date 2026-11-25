@@ -13,3 +13,10 @@ function elegirVegeta(){
 let fuerza = 100;
 let gemas = 0;
 let bolasDragon = 0;
+function entrenar(){
+
+    fuerza += 10;
+
+    alert("Fuerza: " + fuerza);
+
+}
