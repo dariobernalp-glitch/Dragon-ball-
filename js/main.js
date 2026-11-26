@@ -1,65 +1,83 @@
-alert("Bienvenido a Dragon Ball: ドラゴンボールの謎");
-function elegirGoku(){
+let x = 50;
+let y = 200;
 
-    alert("Has elegido a Goku");
-
-}
-
-function elegirVegeta(){
-
-    alert("Has elegido a Vegeta");
-
-}
 let fuerza = 100;
 let gemas = 0;
-let bolasDragon = 0;
-function entrenar(){
 
-    fuerza += 10;
+const player = document.getElementById("player");
 
-    alert("Fuerza: " + fuerza);
+document.addEventListener("keydown", function(e){
 
-}
-function oleada(){
+    if(e.key === "ArrowUp"){
+        y -= 10;
+    }
 
-    gemas += 50;
+    if(e.key === "ArrowDown"){
+        y += 10;
+    }
 
-    alert("Oleada completada");
+    if(e.key === "ArrowLeft"){
+        x -= 10;
+    }
 
-}
-function cristal(){
+    if(e.key === "ArrowRight"){
+        x += 10;
+    }
 
-    if(bolasDragon == 0){
+    player.style.left = x + "px";
+    player.style.top = y + "px";
 
-        alert("Solo puedes salir");
+    comprobarObjetos();
 
+});
+
+function comprobarObjetos(){
+
+    // SACO
+
+    if(cercaDe(150,100)){
+
+        fuerza += 10;
+
+        document.getElementById("fuerza").textContent =
+        fuerza;
+
+        console.log("Entrenando");
+    }
+
+    // TIENDA
+
+    if(cercaDe(650,80)){
+
+        console.log("Tienda abierta");
+    }
+
+    // OLEADA
+
+    if(cercaDe(650,350)){
+
+        gemas += 50;
+
+        document.getElementById("gemas").textContent =
+        gemas;
+
+        console.log("Oleada completada");
+    }
+
+    // CRISTAL
+
+    if(cercaDe(350,220)){
+
+        console.log("Cristal Dragon");
     }
 
 }
-function abrirTienda(){
 
-    alert(
-        "Mejoras disponibles"
+function cercaDe(objX,objY){
+
+    return (
+        Math.abs(x - objX) < 40 &&
+        Math.abs(y - objY) < 40
     );
 
-}
-function oleada(){
-
-    gemas += 50;
-
-    alert(
-        "Has ganado 50 gemas"
-    );
-
-}
-let jefe1Derrotado = false;
-function lucharFreezer(){
-
-    jefe1Derrotado = true;
-
-    bolasDragon++;
-
-    alert(
-        "¡Has conseguido la primera Bola de Dragón!"
-    );
 }
