@@ -52,3 +52,4 @@ function oleada(){
     );
 
 }
+let jefe1Derrotado = false;
