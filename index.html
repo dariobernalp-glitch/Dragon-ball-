@@ -1,59 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+    <meta charset="UTF-8">
     <title>Dragon Ball: ドラゴンボールの謎</title>
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<script src="js/main.js"></script>
+
 <body>
 
 <h1>Dragon Ball: ドラゴンボールの謎</h1>
 
-<p>Elige tu personaje</p>
+<div id="game">
 
-<button onclick="elegirGoku()">
-Goku
-</button>
+    <div id="saco">🥊</div>
 
-<button onclick="elegirVegeta()">
-Vegeta
-</button>
+    <div id="tienda">🛒</div>
+
+    <div id="oleada">🔴</div>
+
+    <div id="cristal">🐉</div>
+
+    <div id="player">😀</div>
+
+</div>
+
+<p>Fuerza: <span id="fuerza">100</span></p>
+<p>Gemas: <span id="gemas">0</span></p>
+
+<script src="js/main.js"></script>
 
 </body>
-
 </html>
-<button onclick="entrenar()">
-Entrenar
-</button>
-<button onclick="oleada()">
-Iniciar Oleada
-</button>
-<button onclick="cristal()">
-Cristal Dragon
-</button>
-<h2>Base Saiyan</h2>
-<button onclick="entrenar()">
-🥊 Saco de entrenamiento
-</button>
-
-<button onclick="abrirTienda()">
-🛒 Tienda
-</button>
-
-<button onclick="cristal()">
-🐉 Cristal Dragón
-</button>
-
-<button onclick="oleada()">
-⚔️ Botón de Oleadas
-</button>
-<p id="gemas">
-Gemas: 0
-</p>
-<button onclick="lucharFreezer()">
-👿 Freezer
-</button>
-<p id="bolas">
-Bolas: 0/7
-</p>
