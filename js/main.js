@@ -53,3 +53,13 @@ function oleada(){
 
 }
 let jefe1Derrotado = false;
+function lucharFreezer(){
+
+    jefe1Derrotado = true;
+
+    bolasDragon++;
+
+    alert(
+        "¡Has conseguido la primera Bola de Dragón!"
+    );
+}
