@@ -36,3 +36,19 @@ function cristal(){
     }
 
 }
+function abrirTienda(){
+
+    alert(
+        "Mejoras disponibles"
+    );
+
+}
+function oleada(){
+
+    gemas += 50;
+
+    alert(
+        "Has ganado 50 gemas"
+    );
+
+}
